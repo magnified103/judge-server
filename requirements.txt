@@ -6,3 +6,6 @@ requests
 setproctitle
 termcolor
 watchdog
+rouge_score
+nltk
+transformers
