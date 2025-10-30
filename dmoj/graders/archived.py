@@ -32,7 +32,7 @@ class ArchivedGrader(StandardGrader):
 
         result.execution_time = 0
 
-        checker = self.problem.load_checker()
+        checker = self.problem.load_checker(self.problem.config['checker'])
 
         with redirect_stdout(StringIO()) as stream:
             score = checker.check(self.problem.problem_data.archive, self.zip_file)
